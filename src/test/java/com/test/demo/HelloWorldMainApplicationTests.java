@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -19,9 +20,17 @@ public class HelloWorldMainApplicationTests {
     @Autowired
     private Person person;
 
+    @Autowired
+    private ApplicationContext ioc;
+
     @Test
     public void contextLoads() {
         System.out.println("person:" + person);
+    }
+
+    @Test
+    public void testHelloService() {
+        System.out.println(ioc.containsBean("helloService"));
     }
 
 
