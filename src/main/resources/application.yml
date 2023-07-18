@@ -1,3 +1,6 @@
 spring:
   datasource:
-    username:
+    username: test
+    password: 123456
+    url: jdbc:mysql://43.142.98.128:3306/springBootDemo
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -11,6 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
 
 /**
  * Spring Boot 单元测试
@@ -19,6 +23,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class HelloWorldMainApplicationTests {
+
+    @Autowired
+    private DataSource dataSource;
 
     @Autowired
     private Person person;
@@ -52,6 +59,15 @@ public class HelloWorldMainApplicationTests {
         logger.info("这是info日志...");
         logger.warn("这是warn日志...");
         logger.error("这是error日志...");
+    }
+
+    @Test
+    public void testDataSource() throws SQLException {
+        System.out.println(dataSource.getClass());
+
+        Connection connection = dataSource.getConnection();
+        System.out.println(connection);
+        connection.close();
     }
 
 
