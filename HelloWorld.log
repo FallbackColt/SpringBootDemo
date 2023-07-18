@@ -34,3 +34,39 @@
 2023-07-17 18:38:00.987  WARN 87572 --- [main] c.t.demo.HelloWorldMainApplicationTests  : 这是warn日志...
 2023-07-17 18:38:00.988 ERROR 87572 --- [main] c.t.demo.HelloWorldMainApplicationTests  : 这是error日志...
 2023-07-17 18:38:00.992  INFO 87572 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@63a12c68: startup date [Mon Jul 17 18:37:59 CST 2023]; root of context hierarchy
+2023-07-18 09:50:35.547 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - Starting HelloWorldMainApplicationTests on FallbackColt with PID 15792 (started by colt in /home/colt/IdeaProjects/SpringBootDemo)
+2023-07-18 09:50:35.548 [main] DEBUG com.test.demo.HelloWorldMainApplicationTests - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2023-07-18 09:50:35.548 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - No active profile set, falling back to default profiles: default
+2023-07-18 09:50:35.578 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63a12c68: startup date [Tue Jul 18 09:50:35 CST 2023]; root of context hierarchy
+2023-07-18 09:50:36.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@63a12c68: startup date [Tue Jul 18 09:50:35 CST 2023]; root of context hierarchy
+2023-07-18 09:50:36.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.test.demo.controller.HelloController.hello()
+2023-07-18 09:50:36.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-07-18 09:50:36.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-07-18 09:50:36.784 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 09:50:36.785 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 09:50:36.808 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 09:50:36.905 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - Started HelloWorldMainApplicationTests in 1.617 seconds (JVM running for 2.162)
+2023-07-18 09:50:36.943 [main] TRACE com.test.demo.HelloWorldMainApplicationTests - 这是trace日志...
+2023-07-18 09:50:36.944 [main] DEBUG com.test.demo.HelloWorldMainApplicationTests - 这是debug日志...
+2023-07-18 09:50:36.944 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - 这是info日志...
+2023-07-18 09:50:36.944 [main] WARN  com.test.demo.HelloWorldMainApplicationTests - 这是warn日志...
+2023-07-18 09:50:36.944 [main] ERROR com.test.demo.HelloWorldMainApplicationTests - 这是error日志...
+2023-07-18 09:50:36.948 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@63a12c68: startup date [Tue Jul 18 09:50:35 CST 2023]; root of context hierarchy
+2023-07-18 10:15:29.913 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - Starting HelloWorldMainApplicationTests on FallbackColt with PID 18655 (started by colt in /home/colt/IdeaProjects/SpringBootDemo)
+2023-07-18 10:15:29.914 [main] DEBUG com.test.demo.HelloWorldMainApplicationTests - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2023-07-18 10:15:29.914 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - No active profile set, falling back to default profiles: default
+2023-07-18 10:15:29.945 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@10d307f1: startup date [Tue Jul 18 10:15:29 CST 2023]; root of context hierarchy
+2023-07-18 10:15:31.005 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@10d307f1: startup date [Tue Jul 18 10:15:29 CST 2023]; root of context hierarchy
+2023-07-18 10:15:31.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.test.demo.controller.HelloController.hello()
+2023-07-18 10:15:31.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-07-18 10:15:31.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-07-18 10:15:31.076 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 10:15:31.076 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 10:15:31.099 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-07-18 10:15:31.195 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - Started HelloWorldMainApplicationTests in 1.534 seconds (JVM running for 2.075)
+2023-07-18 10:15:31.227 [main] TRACE com.test.demo.HelloWorldMainApplicationTests - 这是trace日志...
+2023-07-18 10:15:31.227 [main] DEBUG com.test.demo.HelloWorldMainApplicationTests - 这是debug日志...
+2023-07-18 10:15:31.227 [main] INFO  com.test.demo.HelloWorldMainApplicationTests - 这是info日志...
+2023-07-18 10:15:31.227 [main] WARN  com.test.demo.HelloWorldMainApplicationTests - 这是warn日志...
+2023-07-18 10:15:31.227 [main] ERROR com.test.demo.HelloWorldMainApplicationTests - 这是error日志...
+2023-07-18 10:15:31.231 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@10d307f1: startup date [Tue Jul 18 10:15:29 CST 2023]; root of context hierarchy
